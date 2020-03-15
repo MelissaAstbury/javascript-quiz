@@ -23,42 +23,32 @@
         type="radio"
         id="tickbox1"
         name="questionTwo"
-        value="France"
-        France
+        value="france"
+        checked
       />
       <label for="tickbox1"> France</label><br />
-      <input
-        type="radio"
-        id="tickbox2"
-        name="questionTwo"
-        value="Italy"
-        Italy
-      />
+
+      <input type="radio" id="tickbox2" name="questionTwo" value="italy" />
       <label for="tickbox2">Italy</label><br />
-      <input
-        type="radio"
-        id="tickbox3"
-        name="questionTwo"
-        value="Spain"
-        spain
-      />
+
+      <input type="radio" id="tickbox3" name="questionTwo" value="spain" />
       <label for="tickbox3">Spain</label><br />
 
-      <div class="">
-        <label for="cars">Choose a primary color:</label>
-        <select id="cars">
+      <div>
+        <label for="colors">Choose a primary color:</label>
+        <select id="colors">
           <option value="blue">blue</option>
           <option value="orange">orange</option>
-          <option value="pink">pink</option>
+          <option value="pink" selected>pink</option>
           <option value="violet">violet</option>
         </select>
       </div>
 
-      <button id="button" type="submit" onclick="check()">Submit</button>
+      <button id="button" type="button" onclick="check()">Submit</button>
     </form>
 
-    <div id="pressedSubmit">
-      <p class="numberCorrect">You done a good job!</p>
+    <div id="hiddenDiv">
+      <p class="hiddenText">You done a good job!</p>
     </div>
   </body>
 </html>
