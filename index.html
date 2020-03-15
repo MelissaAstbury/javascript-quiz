@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="quiz.css" />
+
+    <script src="quiz.js"></script>
+
+    <title>Quiz Time</title>
+  </head>
+
+  <body>
+    <h1>Join in today's quiz now!</h1>
+
+    <form id="quiz" name="quiz">
+      <p>What is the capital of England?</p>
+      <input id="textbox" type="text" name="questionOne" />
+
+      <p>Where is Barcelona?</p>
+      <input
+        type="checkbox"
+        id="tickbox1"
+        name="questionTwo"
+        value="France"
+        France
+      />
+      <label for="tickbox1"> France</label><br />
+      <input
+        type="checkbox"
+        id="tickbox2"
+        name="questionTwo"
+        value="Italy"
+        Italy
+      />
+      <label for="tickbox2">Italy</label><br />
+      <input
+        type="checkbox"
+        id="tickbox3"
+        name="questionTwo"
+        value="Spain"
+        spain
+      />
+      <label for="tickbox3">Spain</label><br />
+
+      <p>What color is not a Primary color?</p>
+
+      <div class="colorQuestion" id="red">
+        <input id="colorbox1" type="button" name="questionThree" value="Red" />
+      </div>
+
+      <div class="colorQuestion" id="orange">
+        <input
+          id="colorbox2"
+          type="button"
+          name="questionThree"
+          value="orange"
+        />
+      </div>
+
+      <div class="colorQuestion" id="blue">
+        <input id="colorbox3" type="button" name="questionThree" value="blue" />
+      </div>
+
+      <input id="button" type="button" value="Submit" onclick="check()" />
+    </form>
+  </body>
+</html>
