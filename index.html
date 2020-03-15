@@ -20,7 +20,7 @@
 
       <p>Where is Barcelona?</p>
       <input
-        type="checkbox"
+        type="radio"
         id="tickbox1"
         name="questionTwo"
         value="France"
@@ -28,7 +28,7 @@
       />
       <label for="tickbox1"> France</label><br />
       <input
-        type="checkbox"
+        type="radio"
         id="tickbox2"
         name="questionTwo"
         value="Italy"
@@ -36,7 +36,7 @@
       />
       <label for="tickbox2">Italy</label><br />
       <input
-        type="checkbox"
+        type="radio"
         id="tickbox3"
         name="questionTwo"
         value="Spain"
@@ -44,26 +44,21 @@
       />
       <label for="tickbox3">Spain</label><br />
 
-      <p>What color is not a Primary color?</p>
-
-      <div class="colorQuestion" id="red">
-        <input id="colorbox1" type="button" name="questionThree" value="Red" />
+      <div class="">
+        <label for="cars">Choose a primary color:</label>
+        <select id="cars">
+          <option value="blue">blue</option>
+          <option value="orange">orange</option>
+          <option value="pink">pink</option>
+          <option value="violet">violet</option>
+        </select>
       </div>
 
-      <div class="colorQuestion" id="orange">
-        <input
-          id="colorbox2"
-          type="button"
-          name="questionThree"
-          value="orange"
-        />
-      </div>
-
-      <div class="colorQuestion" id="blue">
-        <input id="colorbox3" type="button" name="questionThree" value="blue" />
-      </div>
-
-      <input id="button" type="button" value="Submit" onclick="check()" />
+      <button id="button" type="submit" onclick="check()">Submit</button>
     </form>
+
+    <div id="pressedSubmit">
+      <p class="numberCorrect">You done a good job!</p>
+    </div>
   </body>
 </html>
